@@ -1,0 +1,32 @@
+[
+  {
+    "id": "2000",
+    "restaurantId": "100",
+    "name": "McSpicy Chicken",
+    "price": 220.0,
+    "image": "PORK",
+    "category": "Burgers & Wraps",
+    "description": "Zesty and redolent whole muscle leg meat patty: Fried to perfect golden tan; quenched with creamy veg mayo and garden-fresh shredded iceberg lettuce. The sandwich is served in fresh, sesame-studded quarter pounder bun.",
+    "ingredients": "Quarter pounder bun crown, Veg sauce, Shredded lettuce, McSpicy chicken patty, Quarter pounder bun heel."
+  },
+  {
+    "id": "2001",
+    "restaurantId": "100",
+    "name": "McSpicy Paneer",
+    "price": 210.0,
+    "image": "PORK",
+    "category": "Burgers & Wraps",
+    "description": "Crispy and spicy paneer patty with creamy tandoori sauce and crispy lettuce topping.",
+    "ingredients": "Quarter pounder bun crown, Shredded lettuce, Tandoori mayo, Spicy paneer patty, Quarter pounder bun heel."
+  },
+  {
+    "id": "2002",
+    "restaurantId": "100",
+    "name": "McChicken",
+    "price": 160.0,
+    "image": "PORK",
+    "category": "Burgers & Wraps",
+    "description": "Batter & breaded chicken patty containing green peas, carrots, green beans, onion, potatoes, rice and spices, served in a bun with eggless mayonnaise and lettuce.",
+    "ingredients": "Quarter bun crown, Veg mayonnaise, Shredded lettuce, McChicken patty, Quarter bun heel."
+  }
+]
