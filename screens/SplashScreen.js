@@ -11,11 +11,11 @@ const SplashScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <StatusBar
+      {/* <StatusBar
         barStyle="light-content"
         backgroundColor="black"
         translucent
-      />
+      /> */}
       <Image
         style={styles.image}
         source={Images.XONTHER}

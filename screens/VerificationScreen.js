@@ -1,13 +1,34 @@
-import { StyleSheet, Text, View, Button } from "react-native";
+import * as React from "react";
+import { StyleSheet, View, StatusBar } from "react-native";
+import { TextInput, Text, Button, Card } from "react-native-paper";
 
 const VerificationScreen = ({ navigation }) => {
+  const [text, setText] = React.useState("");
+
   return (
     <View style={styles.container}>
-      <Text>VerificationScreen</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate("Bootstrap")}
-      />
+      <Card style={styles.card}>
+        <Card.Content>
+          <Text style={styles.text} variant="headlineMedium">
+            Verification
+          </Text>
+          <TextInput
+            style={styles.textInput}
+            label="Verify OTP"
+            placeholder="Please Enter the OTP"
+            value={text}
+            onChangeText={(text) => setText(text)}
+          />
+          <Button
+            mode="contained"
+            onPress={() => navigation.navigate("Bootstrap")}
+          >
+            {" "}
+            Verify
+          </Button>
+        </Card.Content>
+      </Card>
+      
     </View>
   );
 };
@@ -17,8 +38,17 @@ export default VerificationScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    margin: 20,
+    marginTop: 150,
+  },
+  card: {
+    margin: 10,
+    borderRadius: 25,
+  },
+  textInput: {
+    margin: 12,
+  },
+  text: {
+    textAlign: "center",
   },
 });

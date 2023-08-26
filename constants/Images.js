@@ -8,4 +8,5 @@ export default {
   EMPTYCART: require("../assets/empty_cart.png"),
   VEG: require("../assets/veg.png"),
   NONVEG: require("../assets/non_veg.png"),
+  DOGE: require("../assets//doge.png"),
 };
