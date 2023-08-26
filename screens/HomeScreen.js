@@ -69,11 +69,12 @@ const HomeScreen = () => {
             <Card style={styles.menuCard}>
               <Card.Content>
                 <Text variant="titleLarge">{item.name}</Text>
+                <Text variant="bodyLarge">₹ {item.price}</Text>
               </Card.Content>
-              <Card.Cover style={styles.image} source={Images.SALAD} />
+              <Card.Cover style={styles.image} source={Images.CHICKEN} />
               <Card.Actions>
                 <Button>Cancel</Button>
-                <Button onPress={() => selectedItem(item)}>Ok</Button>
+                <Button onPress={() => selectedItem(item)}>Add</Button>
               </Card.Actions>
             </Card>
           )}

@@ -12,7 +12,7 @@ import { Images } from "../constants";
 
 const CartScreen = ({ navigation }) => {
   const [text, setText] = React.useState("");
-  const abcd = 2;
+  const abcd = 1;
 
   if (abcd === 1) {
     return (

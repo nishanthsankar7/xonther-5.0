@@ -18,41 +18,41 @@ const Tab = createMaterialBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
 function BottomTabScreen() {
-  return (           
-        <Tab.Navigator
-          initialRouteName="Home"
-          backBehavior="initialRoute"
-          shifting={true}
-          sceneAnimationEnabled={true}
-          screenOptions={() => ({
-            tabBarActiveTintColor: "yellow",
-            tabBarInactiveTintColor: "yellow",
-            headerShown: false,
-          })}
-        >         
-       
-          <Tab.Screen
-            name="Home"
-            component={HomeScreen}
-            options={{
-              tabBarIcon: "home",
-            }}
-          />
-          <Tab.Screen
-            name="Cart"
-            component={CartScreen}
-            options={{
-              tabBarIcon: "cart",
-            }}
-          />
-          <Tab.Screen
-            name="User"
-            component={UserScreen}
-            options={{
-              tabBarIcon: "account",
-            }}
-          />
-        </Tab.Navigator>   
+  return (
+    <Tab.Navigator
+      initialRouteName="Home"
+      backBehavior="initialRoute"
+      shifting={true}
+      sceneAnimationEnabled={true}
+      screenOptions={() => ({
+        tabBarActiveTintColor: "yellow",
+        tabBarInactiveTintColor: "yellow",
+        headerShown: false,
+      })}
+    >
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          tabBarIcon: "home",
+        }}
+      />
+      <Tab.Screen
+        name="Cart"
+        component={CartScreen}
+        options={{
+          tabBarIcon: "cart",
+          tabBarBadge: "2",
+        }}
+      />
+      <Tab.Screen
+        name="User"
+        component={UserScreen}
+        options={{
+          tabBarIcon: "account",
+        }}
+      />
+    </Tab.Navigator>
   );
 }
 
